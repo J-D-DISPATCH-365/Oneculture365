@@ -36,3 +36,19 @@ npm install
 
 # Example command to run the project
 npm start
+
+Contributing
+Guidelines for contributing to the project.
+
+Fork the project
+Create your feature branch (git checkout -b feature/AmazingFeature)
+Commit your changes (git commit -m 'Add some AmazingFeature')
+Push to the branch (git push origin feature/AmazingFeature)
+Open a pull request
+License
+Distributed under the MIT License. See LICENSE for more information.
+
+Contact Information
+Feel free to reach out for support.
+
+GitHub: Jose Ivan
