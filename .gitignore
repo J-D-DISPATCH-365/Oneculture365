@@ -1,0 +1,39 @@
+echo ".bash_history
+.gitconfig
+AppData/
+Application Data/
+Cookies/
+Downloads/
+Local Settings/
+NTUSER.DAT*
+ODBA/
+Recent/
+SendTo/
+Start Menu/
+Unconfirmed *.crdownload
+ntuser.dat.*
+ntuser.ini" >> .gitignore
+
+# Build artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+*.so
+
+# IDE/project files
+*.sln
+*.vcxproj
+*.log
+*.user
+*.DS_Store
+
+# Backup/temporary files
+*~
+*.tmp
+*.bak
+
+# Compiler-specific
+__pycache__/
+.vscode/

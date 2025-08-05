@@ -1,0 +1,48 @@
+#include <iostream>
+#include <string>
+
+class Looyloo {
+private:
+    std::string mood;
+    int distractionLevel;
+
+public:
+    // Constructor
+    Looyloo() {
+        mood = "suspicious";
+        distractionLevel = 100;
+    }
+
+    // Data member modifier
+    void annoyJose() {
+        distractionLevel += 50;
+        mood = "chaotic";
+        std::cout << "🚨 Looyloo has increased distraction level to " << distractionLevel << "!\n";
+    }
+
+    // Function member
+    void getIgnored() {
+        std::cout << "Jose activates tunnel vision... Looyloo vanishes from memory.\n";
+        distractionLevel = 0;
+        mood = "irrelevant";
+    }
+
+    // Status check
+    void reportStatus() {
+        std::cout << "Looyloo mood: " << mood 
+                  << ", distraction level: " << distractionLevel << "\n";
+    }
+};
+
+int main() {
+    Looyloo watcher;
+    watcher.reportStatus();
+
+    watcher.annoyJose();
+    watcher.reportStatus();
+
+    watcher.getIgnored();
+    watcher.reportStatus();
+
+    return 0;
+}
